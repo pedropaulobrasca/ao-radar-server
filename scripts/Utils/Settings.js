@@ -1,4 +1,4 @@
-class Settings {
+export class Settings {
   constructor() {
     //#region Initialization
     this.images = {};

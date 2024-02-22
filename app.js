@@ -27,8 +27,16 @@ c.setMinBytes && c.setMinBytes(0);
 
 const server = new WebSocket.Server({ port: 5002, host: "localhost" });
 
-server.on("connection", () => {
-  console.log("openned");
+if (device === null) {
+  console.log("No active network interface found.");
+  process.exit(0);
+}
+
+console.log("🔥 Listening on " + device);
+
+server.on("connection", (socket, request) => {
+  console.log("🟢 Connection established.");
+  console.log("🟢 Total connections: " + server.clients.size);
 
   c.on("packet", function (nbytes, trunc) {
     let ret = decoders.Ethernet(buffer);

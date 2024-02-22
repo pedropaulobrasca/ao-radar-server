@@ -1,19 +1,18 @@
 {
-  "name": "albion-zqradar",
+  "name": "ao-radar-server",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "nodemonConfig": {
     "watch": [
-      "app.js",
-      "views"
+      "app.js"
     ],
-    "ext": "js,json,ejs"
+    "ext": "js,json"
   },
   "scripts": {
-    "nodemon": "nodemon --inspect app.js"
+    "dev": "nodemon --inspect app.js"
   },
-  "author": "Zeldruck",
+  "author": "Pedro Paulo",
   "license": "ISC",
   "dependencies": {
     "buffercursor": "^0.0.12",
