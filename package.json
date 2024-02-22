@@ -1,0 +1,30 @@
+{
+  "name": "albion-zqradar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "nodemonConfig": {
+    "watch": [
+      "app.js",
+      "views"
+    ],
+    "ext": "js,json,ejs"
+  },
+  "scripts": {
+    "nodemon": "nodemon --inspect app.js"
+  },
+  "author": "Zeldruck",
+  "license": "ISC",
+  "dependencies": {
+    "buffercursor": "^0.0.12",
+    "cap": "^0.2.1",
+    "ip": "^2.0.0",
+    "nan": "^2.18.0",
+    "node-gyp": "^10.0.1",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.3",
+    "npm": "^10.2.3",
+    "path": "^0.12.7",
+    "ws": "^8.14.2"
+  }
+}
